@@ -1,0 +1,17 @@
+
+/* image layout */
+.clearfix {
+    overflow: auto;
+}
+
+/* button alignment */
+
+#profile{
+    display: inline-block ;
+    alignment-baseline: center;
+}
+
+.container{
+    border: 2px rgba(38, 38, 38, 1);
+    border-radius: 8px;
+}
