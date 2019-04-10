@@ -1,17 +1,57 @@
-
 /* image layout */
-.clearfix {
+.clearfix
+{
     overflow: auto;
 }
-
-/* button alignment */
-
-#profile{
-    display: inline-block ;
-    alignment-baseline: center;
+img
+{
+    max-width:100%;
+    height: auto;
+}
+html {
+    scroll-behavior: smooth;
 }
 
-.container{
-    border: 2px rgba(38, 38, 38, 1);
+
+/* button alignment */
+#buttonContainer
+{
+    display:table;
+    text-align:center;
+}
+
+#profile
+{
+    margin-bottom:45px;
+    padding-top:5px;
+    vertical-align: top;
+    display:inline-block;
+}
+blockquote
+{
+    line-height: 1.6;
+    font-style: italic;
+    font-size:medium;
+}
+
+/*Main div*/
+.container
+{
+    margin-top: 95px ;
+    padding: 10px;
+    border: 2px solid gainsboro;
     border-radius: 8px;
+    word-wrap: break-word;
+}
+#intro
+{
+    font-family: "Times New Roman", Times, serif;
+}
+
+/*blockquote style*/
+cite
+{
+    font-style: italic;
+    font-variant: small-caps;
+    font-size:small;
 }
