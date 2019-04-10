@@ -1,25 +1,36 @@
-/* image layout */
+/*
+    Kat Truitt
+    IT328 Dating Assignment
+    10APR2019
+    styles.css -> additional CSS for layout in addition to BootStrap
+*/
+/* image layout, adjust size to fit to div element*/
 .clearfix
 {
     overflow: auto;
 }
+
+/* CSS set max-width to 100% and height on auto*/
 img
 {
     max-width:100%;
     height: auto;
 }
+
+/* Set scroll to smooth*/
 html {
     scroll-behavior: smooth;
 }
 
 
-/* button alignment */
+/* button display and text-alignment */
 #buttonContainer
 {
     display:table;
     text-align:center;
 }
 
+/* CSS layout to keep button centered in the div*/
 #profile
 {
     margin-bottom:45px;
@@ -27,6 +38,8 @@ html {
     vertical-align: top;
     display:inline-block;
 }
+
+/*CSS style and layout set to small uppercaps and italicized font */
 blockquote
 {
     line-height: 1.6;
@@ -34,7 +47,7 @@ blockquote
     font-size:medium;
 }
 
-/*Main div*/
+/*Main layout adjusted div*/
 .container
 {
     margin-top: 95px ;
@@ -43,12 +56,15 @@ blockquote
     border-radius: 8px;
     word-wrap: break-word;
 }
+
+/*Sets font Times New Roman*/
 #intro
 {
     font-family: "Times New Roman", Times, serif;
 }
 
-/*blockquote style*/
+
+/*blockquote style is addressed without fatally destroying my page */
 cite
 {
     font-style: italic;
