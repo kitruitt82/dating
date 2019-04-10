@@ -1,18 +1,30 @@
+<!--
+    Kat Truitt
+    IT328 Assignment Dating
+    April 11,1982
+    home.html-> renders the home.html page to reflect assignment methods
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- character set to UTF-8 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- http url title heading set -->
     <title>Dating</title>
+    <!-- fontawesome link to get  set glyphicon for website, as well as BootStrap maxcdn, stack path, JQuery and
+     possibly more 2 more script.javascript assignments-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- styles.css for additional styling and layout-->
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
 <div>
+    <!-- added fixed navbar to footer-->
     <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#">Dating Connection</a>
     </nav><i class="fas fa-home"></i>
@@ -20,27 +32,33 @@
 <div class="container">
     <div class="row">
     <div class="col">
+        <!--Welcome Div -->
         <h2>The Connection<i class="fas fa-heart"></i></h2>
         <p id="intro">Welcome to my dating website! Create a profile with your interests. We generate matches by
             interest and location. This site has successfully matched many couples. Take a moment to
             find out if your special someone is out there!
         </p>
+        <!--Blockquote dive-->
         <h4>Hear what users have to say about us...</h4>
+        <!-- header line before and aft blockquote-->
         <hr class="my-4">
         <blockquote class="blockquote text-center">
-            <p class="mb-0"><bold><em>Star Wars</em></bold> profile pic brought us together.<cite> ~ Drew</cite></p>
+            <p class="mb-0"><strong><em>Star Wars</em></strong> profile pic brought us together.<cite> ~ Drew</cite></p>
             <p class="mb-0">Great site, easy to navigate!<cite> ~ Betty</cite></p>
             <p class="mb-0">Met my partner, who is also my best friend, on this site.<cite> ~ Kelly</cite></p>
         </blockquote>
         <hr class="my-4">
+        <!-- Button container-->
         <div class="row">
             <div id="buttonContainer" class="col">
+                <!--submit form-->
                 <a id="profile" class="btn btn-primary btn-lg" href="#" role="button">Create Profile</a>
             </div>
         </div>
     </div>
         <div class="col">
             <div class="clearfix">
+                <!-- Image ;layout addresses content overflow and uploaded image to Intellij-->
                 <img class="img-fluid rounded mx-auto d-block" src="images/romance-stormtrooper.jpg"
                      alt="storm trooper">
             </div>
@@ -52,11 +70,11 @@
 
 
 
-
-
+<!-- Fixed position footer, author name and year -->
 <nav class="navbar fixed-bottom navbar-light bg-light">
     <a class="navbar-brand" href="#">Kat Truitt &copy;2019</a>
 </nav>
+<!--Additional script links -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
