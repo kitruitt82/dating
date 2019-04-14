@@ -4,6 +4,7 @@
     10APR2019
     styles.css -> additional CSS for layout in addition to BootStrap
 */
+
 /* image layout, adjust size to fit to div element*/
 .clearfix
 {
@@ -18,16 +19,17 @@ img
 }
 
 /* Set scroll to smooth*/
-html {
+html
+{
     scroll-behavior: smooth;
 }
-
 
 /* button display and text-alignment */
 #buttonContainer
 {
     display:table;
     text-align:center;
+    padding:0;
 }
 
 /* CSS layout to keep button centered in the div*/
@@ -39,19 +41,50 @@ html {
     display:inline-block;
 }
 
-/*CSS style and layout set to small uppercaps and italicized font */
+#topNav,#navBottom
+{
+    padding: 0;
+    margin:0;
+}
+
+#picture
+{
+    padding-top:40px;
+}
+#word
+{
+    padding-top:20px;
+}
+h4
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+/*CSS style and layout set to small uppercase and italicized font */
 blockquote
 {
-    line-height: 1.6;
+    margin-left:20px;
+    margin-right:20px;
+    line-height: 1;
     font-style: italic;
-    font-size:medium;
+    font-size:small;
+    font-variant: small-caps;
+}
+
+/*blockquote style is addressed without fatally destroying my page */
+cite
+{
+    font-style: italic;
+    font-variant: small-caps;
+    font-size:small;
 }
 
 /*Main layout adjusted div*/
 .container
 {
-    margin-top: 95px ;
-    padding: 10px;
+    margin-top: 60px ;
+    padding: 30px;
     border: 2px solid gainsboro;
     border-radius: 8px;
     word-wrap: break-word;
@@ -61,13 +94,4 @@ blockquote
 #intro
 {
     font-family: "Times New Roman", Times, serif;
-}
-
-
-/*blockquote style is addressed without fatally destroying my page */
-cite
-{
-    font-style: italic;
-    font-variant: small-caps;
-    font-size:small;
 }
