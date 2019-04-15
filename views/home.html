@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <!--
     Kat Truitt
     IT328 Assignment Dating
-    April 11,1982
+    April 11,2019
     home.html-> renders the home.html page to reflect assignment methods
 -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- character set to UTF-8 -->
@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- styles.css for additional styling and layout-->
-    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet"  type="text/css" href="styles/styles.css"/>
 </head>
 <body>
-<div>
+<div id="topNav">
     <!-- added fixed navbar to footer-->
     <nav class="navbar fixed-top navbar-light bg-light">
             <a class="navbar-brand" href="#">Dating Connection</a>
@@ -31,32 +31,47 @@
 </div>
 <div class="container">
     <div class="row">
-    <div class="col">
-        <!--Welcome Div -->
-        <h2>The Connection<i class="fas fa-heart"></i></h2>
-        <p id="intro">Welcome to my dating website! Create a profile with your interests. We generate matches by
-            interest and location. This site has successfully matched many couples. Take a moment to
-            find out if your special someone is out there!
-        </p>
-        <!--Blockquote dive-->
-        <h4>Hear what users have to say about us...</h4>
-        <!-- header line before and aft blockquote-->
-        <hr class="my-4">
-        <blockquote class="blockquote text-center">
-            <p class="mb-0"><strong><em>Star Wars</em></strong> profile pic brought us together.<cite> ~ Drew</cite></p>
-            <p class="mb-0">Great site, easy to navigate!<cite> ~ Betty</cite></p>
-            <p class="mb-0">Met my partner, who is also my best friend, on this site.<cite> ~ Kelly</cite></p>
-        </blockquote>
-        <hr class="my-4">
-        <!-- Button container-->
-        <div class="row">
-            <div id="buttonContainer" class="col">
-                <!--submit form-->
-                <a id="profile" class="btn btn-primary btn-lg" href="#" role="button">Create Profile</a>
+        <div id="word" class="col">
+            <!--Welcome Div -->
+            <h2>The Connection<i class="fas fa-heart"></i></h2>
+            <p id="intro">Welcome to my dating website! Create a profile with your interests. We generate matches by
+                interest and location. This site has successfully matched many couples. Take a moment to
+                find out if your special someone is out there!
+            </p>
+            <!--Blockquote dive-->
+            <h4>Hear what users have to say about us...</h4>
+            <!-- header line before and aft blockquote-->
+            <hr class="my-4">
+            <blockquote class="blockquote">
+                <p class="mb-0">Finally! I'm super stoked that there is a dating site dedicated to
+                    Stormtroopers</p>
+                <footer class="blockquote-footer">Wandering Stormtrooper
+                    <cite title="Source Title">Drew</cite>
+                </footer>
+            </blockquote>
+            <blockquote  class="blockquote">
+                <p class="mb-0">Great site, easy to navigate!</p>
+                <footer class="blockquote-footer">Never Lost
+                    <cite title="Source Title">Betty</cite>
+                </footer>
+            </blockquote>
+            <blockquote  class="blockquote">
+                <p class="mb-0">Met my partner, who is also my best friend, on this site.</p>
+                <footer class="blockquote-footer">Floating in happiness
+                    <cite title="Source Title">Kelly</cite>
+                </footer>
+            </blockquote>
+            <hr class="my-4">
+            <!-- Button container-->
+            <div class="row">
+                <div id="buttonContainer" class="col">
+                    <!--create profile form-->
+                    <a id="profile" class="btn btn-primary btn-lg" href="#start">
+                        Create Profile</a>
+                </div>
             </div>
-        </div>
     </div>
-        <div class="col">
+        <div id="picture" class="col">
             <div class="clearfix">
                 <!-- Image ;layout addresses content overflow and uploaded image to Intellij-->
                 <img class="img-fluid rounded mx-auto d-block" src="images/romance-stormtrooper.jpg"
@@ -68,10 +83,8 @@
 
 
 
-
-
 <!-- Fixed position footer, author name and year -->
-<nav class="navbar fixed-bottom navbar-light bg-light">
+<nav id="navBottom" class="navbar fixed-bottom navbar-light bg-light">
     <a class="navbar-brand" href="#">Kat Truitt &copy;2019</a>
 </nav>
 <!--Additional script links -->
