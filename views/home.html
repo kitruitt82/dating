@@ -21,66 +21,63 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- css.css for additional styling and layout-->
-    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="styles/styles.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<div id="topNav">
-    <!-- added fixed navbar to footer-->
-    <nav class="navbar fixed-top navbar-light bg-light">
-            <a class="navbar-brand" href="#">Dating Connection</a>
-    </nav><i class="fas fa-home"></i>
-</div>
-<div class="container">
-    <div class="row">
-        <div id="word" class="col">
-            <!--Welcome Div -->
-            <h2>The Connection<i class="fas fa-heart"></i></h2>
-            <p id="intro">Welcome to my dating website! Create a profile with your interests. We generate matches by
-                interest and location. This site has successfully matched many couples. Take a moment to
-                find out if your special someone is out there!
-            </p>
-            <!--Blockquote dive-->
-            <h4>Hear what users have to say about us...</h4>
-            <!-- header line before and aft blockquote-->
-            <hr class="my-4">
-            <blockquote class="blockquote">
-                <p class="mb-0">Finally! I'm super stoked that there is a dating site dedicated to
-                    Stormtroopers</p>
-                <footer class="blockquote-footer">Wandering Stormtrooper
-                    <cite title="Source Title">Drew</cite>
-                </footer>
-            </blockquote>
-            <blockquote  class="blockquote">
-                <p class="mb-0">Great site, easy to navigate!</p>
-                <footer class="blockquote-footer">Never Lost
-                    <cite title="Source Title">Betty</cite>
-                </footer>
-            </blockquote>
-            <blockquote  class="blockquote">
-                <p class="mb-0">Met my partner, who is also my best friend, on this site.</p>
-                <footer class="blockquote-footer">Floating in happiness
-                    <cite title="Source Title">Kelly</cite>
-                </footer>
-            </blockquote>
-            <hr class="my-4">
-            <!-- Button container-->
-            <div class="row">
-                <div id="buttonContainer" class="col">
-                    <!--create profile form-->
-                    <a id="profile" class="btn btn-primary btn-lg" href="create-profile">
-                        Create Profile</a>
-                </div>
-            </div>
-    </div>
-        <div id="picture" class="col">
-            <div class="clearfix">
-                <!-- Image ;layout addresses content overflow and uploaded image to Intellij-->
-                <img class="img-fluid rounded mx-auto d-block" src="images/romance-stormtrooper.jpg"
-                     alt="storm trooper">
-            </div>
+<!-- added fixed navbar -->
+<nav class="navbar fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="#"><i class="fas fa-home"></i>Dating Connection</a>
+</nav>
+<div class="container-fluid">
+<div id="content" class="border border-secondary rounded row">
+    <div id="word" class="col-sm-6">
+        <!--Welcome Div -->
+        <h2>The Connection<i class="fas fa-heart"></i></h2>
+        <p id="intro">Welcome to my dating website! Create a profile with your interests. We generate matches by
+            interest and location. This site has successfully matched many couples. Take a moment to
+            find out if your special someone is out there!
+        </p>
+        <!--Blockquote dive-->
+        <p class="h6">Hear what users have to say about us...</p>
+        <!-- header line before and aft blockquote-->
+        <hr class="my-4">
+        <blockquote class="blockquote">
+            <p class="mb-0">Finally! I'm super stoked that there is a dating site dedicated to
+                Stormtroopers</p>
+            <footer class="blockquote-footer">Wandering Stormtrooper
+                <cite title="Source Title">Drew</cite>
+            </footer>
+        </blockquote>
+        <blockquote  class="blockquote">
+            <p class="mb-0">Great site, easy to navigate!</p>
+            <footer class="blockquote-footer">Never Lost
+                <cite title="Source Title">Betty</cite>
+            </footer>
+        </blockquote>
+        <blockquote  class="blockquote">
+            <p class="mb-0">Met my partner, who is also my best friend, on this site.</p>
+            <footer class="blockquote-footer">Floating in happiness
+                <cite title="Source Title">Kelly</cite>
+            </footer>
+        </blockquote>
+        <hr class="my-4">
+        <!-- Button container-->
+
+        <div id="buttonContainer" class="row">
+            <!--create profile form-->
+            <a id="profile" class="btn btn-primary btn-lg" href="create-profile">
+                Create Profile</a>
         </div>
+
+    </div>
+    <div id="picture" class="col-sm-6 clearfix">
+        <!-- Image ;layout addresses content overflow and uploaded image to Intellij-->
+        <img class="card-img img-fluid rounded mx-auto" src="images/romance-stormtrooper.jpg"
+             alt="storm trooper">
     </div>
 </div>
+</div>
+
 
 
 
