@@ -5,57 +5,79 @@
     styles.css -> additional CSS for layout in addition to BootStrap
 */
 
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* Keeps the divs below fixed-top navbar and above fixed-bottom navbar, unless content
+needs to be scrolled*/
+body {
+    padding:56px 0 56px 0 ;
+    scroll-behavior: smooth;
+}
+
 /* image layout, adjust size to fit to div element*/
 .clearfix
 {
     overflow: auto;
 }
 
-/* CSS set max-width to 100% and height on auto*/
-img
+#content
 {
-    max-width:100%;
-    height: auto;
-}
+    margin:20px 10px 20px 10px;
 
-/* Set scroll to smooth*/
-html
-{
-    scroll-behavior: smooth;
 }
 
 /* button display and text-alignment */
 #buttonContainer
 {
-    display:table;
+
     text-align:center;
-    padding:0;
+    margin-bottom:10px;
 }
 
 /* CSS layout to keep button centered in the div*/
 #profile
 {
-    margin-bottom:45px;
+    margin-left:38%;
     padding-top:5px;
     vertical-align: top;
     display:inline-block;
 }
 
-#topNav,#navBottom
-{
-    padding: 0;
-    margin:0;
-}
 
+
+/* image div padding set to keep space between columns */
 #picture
 {
-    padding-top:40px;
+    padding-top:20px;
+    padding-left:30px;
+    text-align: right;
 }
+
+/* Image margins are set to 20px to give space between elements*/
+img
+{
+    padding-top:0;
+    margin:20px;
+}
+
 #word
 {
-    padding-top:20px;
+    padding:20px 10px 20px 10px;
+
+    margin-bottom:0;
 }
-h4
+
+/* Centers the heading above the block-quotes centered*/
+.h6
 {
     margin-left:20px;
     margin-right:20px;
@@ -78,16 +100,6 @@ cite
     font-style: italic;
     font-variant: small-caps;
     font-size:small;
-}
-
-/*Main layout adjusted div*/
-.container
-{
-    margin-top: 60px ;
-    padding: 30px;
-    border: 2px solid gainsboro;
-    border-radius: 8px;
-    word-wrap: break-word;
 }
 
 /*Sets font Times New Roman*/
