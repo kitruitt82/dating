@@ -47,7 +47,7 @@
                         </check>-->
                     <li class="list-group-item">Age: {{ @SESSION.age }}</li>
                     <li class="list-group-item">Phone: {{ @SESSION.phone }}</li>
-                    <li class="list-group-item">Email: {{ @SESSION.email }}</li>
+                    <li class="list-group-item">Email: {{ $_SESSION['email'] }}</li>
                     <li class="list-group-item">State: {{ @SESSION.state }}</li>
                     <li class="list-group-item">Seeking: </li>
                     <!--<check if="{{ @SESSION.genderSeeking == 'M' }}">
@@ -58,11 +58,11 @@
                             <li class="list-group-item">Seeking: Female</li>
                         </false>
                     </check>-->
-                    <li class="list-group-item">Interests: </li>
+                    <li class="list-group-item">Interests: {{@SESSION.interests}} </li>
                 </ul>
             </div>
             <div class="col-sm-6 clearfix ">
-                <img class="img-fluid rounded mx-auto" src="images/darth-dating.png" alt="Darth Icon"/>
+                <img class="img-fluid rounded mx-auto" id="darth" src="images/darth-dating.png" alt="Darth Icon"/>
                 <h4>
                     Biography
                 </h4>
@@ -70,7 +70,9 @@
 
                 </p>
             </div>
-
+        </div>
+        <div class="form-group">
+            <input class="btn btn-primary" id="contact" type="submit" name="submit" value="Contact Me!"/>
         </div>
     </div>
 </div>
