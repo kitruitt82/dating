@@ -117,7 +117,7 @@ cite
 }
 
 
-/* Profile page layout */
+/* form1.html styles and layout */
 .personalInformation
 {
     margin:10px 20px 15px 20px;
@@ -146,7 +146,6 @@ cite
     margin-left:80%;
     margin-top:65%;
 }
-
 
 /*Interest page layout*/
 .interestContainer
@@ -180,6 +179,16 @@ cite
     padding-left:10%;
 }
 
+ul,li
+{
+    list-style: none;
+    text-decoration: none;
+}
+
+#list
+{
+    margin-top:20px;
+}
 
 /* Layout for all next buttons*/
 .next
