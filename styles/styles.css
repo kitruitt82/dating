@@ -29,12 +29,6 @@ body {
     overflow: auto;
 }
 
-#content
-{
-    margin:20px 10px 20px 10px;
-
-}
-
 /* button display and text-alignment */
 #buttonContainer
 {
@@ -53,7 +47,6 @@ body {
 }
 
 
-
 /* image div padding set to keep space between columns */
 #picture
 {
@@ -69,7 +62,7 @@ img
     margin:20px;
 }
 
-#word
+.word
 {
     padding:20px 10px 20px 10px;
 
@@ -82,6 +75,7 @@ img
     margin-left:20px;
     margin-right:20px;
 }
+
 
 /*CSS style and layout set to small uppercase and italicized font */
 blockquote
@@ -107,3 +101,90 @@ cite
 {
     font-family: "Times New Roman", Times, serif;
 }
+
+
+/* Sets text area to scrollable*/
+#biography
+{
+    overflow-y: scroll;
+}
+
+.container-fluid
+{
+    border-color: #f0f0f0 !important;
+    padding:20px;
+    margin:20px;
+}
+
+
+/* Profile page layout */
+.personalInformation
+{
+    margin:10px 20px 15px 20px;
+    padding:10px;
+}
+
+
+#radioF
+{
+    margin-top:10px;
+    margin-left:20px !important;
+    text-align: justify !important;
+
+}
+
+.card-body
+{
+    margin:35px 10px 10px 10px;
+    padding:10px;
+    text-align-last: center;
+    background-color:gainsboro;
+}
+
+#next1
+{
+    margin-left:80%;
+    margin-top:65%;
+}
+
+
+/*Interest page layout*/
+.interestContainer
+{
+    margin:10px 40px 10px 40px;
+
+    text-align: left;
+}
+
+.titleInterest
+{
+    margin-left:0;
+    margin-right:20px;
+}
+
+.indoor,.outdoor
+{
+    margin:10px 0 10px 0;
+}
+.interests
+{
+    width: 220px;
+    margin-right:10px;
+
+}
+
+.form-check-input
+{
+    margin-left:40px;
+    margin-right:40px;
+    padding-left:10%;
+}
+
+
+/* Layout for all next buttons*/
+.next
+{
+    text-align: right;
+    margin-left: 90%;
+}
+
