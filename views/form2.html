@@ -43,10 +43,10 @@
                             <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
                         </div>
                         <div class="form-group">
-                            <label for="state">State</label>
+<!--                            <label for="state">State</label>-->
                             <select class="form-control" name="{{ @states }}" id="state">
                                 <repeat group="{{ @states }}" value="{{ @state }}">
-                                    <option value="{{ @state }}">{{ trim(@state) }}</option>
+                                    <option value="{{ @state }}">{{ @state }}</option>
                                 </repeat>
                             </select>
                         </div>
@@ -54,11 +54,13 @@
                             <label>Seeking</label>
                         </div>
                          <div id="radioF" class="form-group custom-radio custom-control-inline">
-                             <input type="radio" id="female" name="genderSeeking" class="custom-control-input">
+                             <input class="custom-control-input" id="female" type="radio" name="genderSeeking"
+                             value="Female">
                              <label class="custom-control-label" for="female">Female</label>
                          </div>
                         <div id="radioM" class="form-group custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="male" name="genderSeeking" class="custom-control-input">
+                            <input class="custom-control-input" id="male" type="radio" name="genderSeeking"
+                            value="Male">
                             <label class="custom-control-label" for="male">Male</label>
                         </div>
                     </div>

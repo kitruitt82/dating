@@ -36,7 +36,7 @@
             <div id ="list" class="col-sm-6">
                 <ul>
                     <li class="list-group-item">Name: {{ @SESSION.fname }} {{ @SESSION.lname}}</li>
-                    <li class="list-group-item">Gender: </li>
+                    <li class="list-group-item">Gender: {{ @SESSION.gender }}</li>
                        <!-- <check if="{{ @SESSION.gender == 'M' }}">
                             <true>
                                 <li class="list-group-item">Gender: Male</li>
@@ -49,7 +49,7 @@
                     <li class="list-group-item">Phone: {{ @SESSION.phone }}</li>
                     <li class="list-group-item">Email: {{ $_SESSION['email'] }}</li>
                     <li class="list-group-item">State: {{ @SESSION.state }}</li>
-                    <li class="list-group-item">Seeking: </li>
+                    <li class="list-group-item">Seeking: {{ @SESSION.genderSeeking }} </li>
                     <!--<check if="{{ @SESSION.genderSeeking == 'M' }}">
                         <true>
                             <li class="list-group-item">Seeking: Male</li>
