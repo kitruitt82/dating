@@ -1,5 +1,12 @@
 <?php
 session_start();
+/*
+Kat Truitt
+IT328 Assignment Dating
+April 19,2019
+index.php-> renders the routes functions, sessions and etc. for the dating websites
+*/
+
 //turn on error reporting
 ini_set('display_errors',1);
 error_reporting(E_ALL);
