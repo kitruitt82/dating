@@ -113,7 +113,7 @@ $f3->route('POST /profile', function()
     $_SESSION['email'] = $_POST['email'];
     $_SESSION['states'] = $_POST['states'];
     $_SESSION['genderSeeking'] = $_POST['genderSeeking'];
-    //echo'<h1>HELLO WORLD</h1>';
+    $_SESSION['biography'] = $_POST['biography'];
     $view = new Template();
     echo $view->render('views/interests.html');
 });

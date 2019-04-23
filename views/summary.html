@@ -50,14 +50,6 @@
                     <li class="list-group-item">Email: {{ $_SESSION['email'] }}</li>
                     <li class="list-group-item">State: {{ @SESSION.state }}</li>
                     <li class="list-group-item">Seeking: {{ @SESSION.genderSeeking }} </li>
-                    <!--<check if="{{ @SESSION.genderSeeking == 'M' }}">
-                        <true>
-                            <li class="list-group-item">Seeking: Male</li>
-                        </true>
-                        <false>
-                            <li class="list-group-item">Seeking: Female</li>
-                        </false>
-                    </check>-->
                     <li class="list-group-item">Interests: {{@SESSION.interests}} </li>
                 </ul>
             </div>
@@ -66,9 +58,7 @@
                 <h4>
                     Biography
                 </h4>
-                <p>
-
-                </p>
+                <p>{{ @SESSION.biography }}</p>
             </div>
         </div>
         <div class="form-group">
