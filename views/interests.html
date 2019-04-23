@@ -1,3 +1,9 @@
+<!--
+    Kat Truitt
+    IT328 Assignment Dating
+    April 19,2019
+    form2.html-> Displays the interests form
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +23,13 @@
 <div id="topNav">
     <!-- added fixed navbar to footer-->
     <nav class="navbar fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">Dating Connection<i class="fas fa-home"></i></a>
+        <a class="navbar-brand" href="home">Dating Connection<i class="fas fa-home"></i></a>
     </nav>
 </div>
 <div class="container-fluid">
-    <div class="border rounded row profile">
+    <div class="border rounded profile">
         <div class="interestContainer form-group">
-            <form action="interest" method="post">
+            <form action="interests" method="post">
                 <div class="titleInterest">
                     <h2>Interests</h2>
                 </div>
@@ -33,7 +39,8 @@
                 </div>
                 <repeat group="{{ @indoor }}" value="{{ @item }}">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="{{ @item }}" value="{{ @item }}" >
+                        <input class="form-check-input" id="{{ @item }}" type="checkbox" name="interests[]"
+                               value="{{ @item }}" >
                         <label class="interests form-check-label" for="{{ @item }}">{{ trim(@item) }}</label>
                     </div>
                 </repeat>
@@ -42,12 +49,13 @@
                 </div>
                 <repeat group="{{ @outdoor }}" value="{{ @item2 }}">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="{{ @item2 }}" value="{{ @item2 }}" >
+                        <input class="form-check-input" id="{{ @item2 }}" type="checkbox" name="interests[]"
+                        value="{{ @item2 }}" >
                         <label class="interests form-check-label " for="{{ @item2 }}">{{ trim(@item2) }}</label>
                     </div>
                 </repeat>
-                <div  class="next row">
-                    <input class="btn btn-primary" type="submit" value="Next >" />
+                <div  class="next">
+                    <a href="confirmation"><input class="btn btn-primary" type="submit" value="Next >" /></a>
                 </div>
             </form>
         </div>

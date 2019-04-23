@@ -1,3 +1,9 @@
+<!--
+    Kat Truitt
+    IT328 Assignment Dating
+    April 19,2019
+    form2.html-> Displays form1 inputs
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +23,7 @@
 <div id="topNav">
     <!-- added fixed navbar to footer-->
     <nav class="navbar fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">Dating Connection<i class="fas fa-home"></i></a>
+        <a class="navbar-brand" href="home">Dating Connection<i class="fas fa-home"></i></a>
     </nav>
 </div>
 <div class="container-fluid">
@@ -25,8 +31,7 @@
         <div class="personalInformation form-group row">
             <h2>Personal Information</h2>
             <hr class="my-4">
-
-                <form class="personalForm" action="personal" method="post">
+                <form action="personal" method="post">
                     <div class="row">
                     <div class="col-sm-8">
                         <div class="form-group">
@@ -45,11 +50,11 @@
                             <label>Gender</label>
                         </div>
                         <div id="radioF" class="form-group custom-radio custom-control-inline">
-                            <input type="radio" id="female" name="gender" class="custom-control-input">
+                            <input class="custom-control-input" id="female" type="radio" name="gender" value="Female">
                             <label class="custom-control-label" for="female">Female</label>
                         </div>
                         <div id="radioM" class="form-group custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="male" name="gender" class="custom-control-input">
+                            <input class="custom-control-input" id="male" type="radio" name="gender" value="Male" >
                             <label class="custom-control-label" for="male">Male</label>
                         </div>
                         <div class="form-group">
@@ -75,9 +80,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 
 <!-- Fixed position footer, author name and year -->
