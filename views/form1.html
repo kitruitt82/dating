@@ -31,31 +31,45 @@
         <div class="personalInformation form-group row">
             <h2>Personal Information</h2>
             <hr class="my-4">
-                <form action="personal" method="post">
+                <form action="#" method="post">
                     <div class="row">
                     <div class="col-sm-8">
                         <div class="form-group">
                             <label for="fname">First Name</label>
-                                <input class="form-control" id="fname" type="text" name="fname">
+                                <input class="form-control" id="fname" type="text" name="fname" value="{{ @fname }}">
+                            <check if="{{ @errors['fname'] }}">
+                                <span class="err">{{ @errors['fname'] }}</span>
+                            </check><br><br>
                         </div>
                         <div class="form-group">
                             <label for="lname">Last Name</label>
-                            <input class="form-control" id="lname" type="text" name="lname">
+                            <input class="form-control" id="lname" type="text" name="lname" value="{{ @lname }}">
+                            <check if="{{ @errors['lname'] }}">
+                                <span class="err">{{ @errors['lname'] }}</span>
+                            </check><br><br>
                         </div>
                         <div class="form-group">
                             <label for="age">Age</label>
-                            <input class="form-control" id="age" type="text" name="age">
+                            <input class="form-control" id="age" type="text" name="age" value="{{ @age }}">
+                            <check if=" {{ @errors['age'] }} ">
+                                <span class="err">{{ @errors['age'] }}</span>
+                            </check>
                         </div>
                         <div class="form-group">
                             <label>Gender</label>
-                        </div>
-                        <div id="radioF" class="form-group custom-radio custom-control-inline">
-                            <input class="custom-control-input" id="female" type="radio" name="gender" value="Female">
-                            <label class="custom-control-label" for="female">Female</label>
-                        </div>
-                        <div id="radioM" class="form-group custom-control custom-radio custom-control-inline">
-                            <input class="custom-control-input" id="male" type="radio" name="gender" value="Male" >
-                            <label class="custom-control-label" for="male">Male</label>
+                            <check if="{{ @errors['gender'] }}">
+                                <span class="err">{{ @errors['gender'] }}</span>
+                            </check><br>
+                            <repeat group="{{ @genders }}" value="{{ @gender }}">
+                                <div id="radioF" class="form-group custom-radio custom-control-inline">
+                                    <input class="custom-control-input" id="{{ @gender }}" type="radio" name="gender"
+                                           value="{{ @gender }}"
+                                    <check if="{{ @gender == @gender }}">
+                                        checked="checked"
+                                    </check>>
+                                    <label class="custom-control-label" for="{{ @gender }}">{{ @gender }}</label>
+                                </div>
+                            </repeat>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>

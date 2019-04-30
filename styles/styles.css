@@ -120,14 +120,14 @@ cite
 /* form1.html styles and layout */
 .personalInformation
 {
-    margin:10px 20px 15px 20px;
+    margin:10px 20px 10px 20px;
     padding:10px;
 }
 
 
 #radioF
 {
-    margin-top:10px;
+    margin-top:5px;
     margin-left:20px !important;
     text-align: justify !important;
 
